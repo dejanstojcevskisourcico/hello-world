@@ -10,4 +10,4 @@ jobs:
           var-name: DEJAN
           var-value: cat temp.txt
       - env/persist-env
-      - run: echo 'Variable value of DEJAN is: ' $DEJAN
+      - run: echo "Variable value of DEJAN is $DEJAN"
