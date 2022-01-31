@@ -8,8 +8,8 @@ jobs:
       - env/set-env-var:
           var-name: DEJAN
           var-value: deko
-      - run: echo "Do some stuff with $DEJAN..."
       - env/persist-env
+      - run: echo "Do some stuff with $DEJAN..."
       - run: echo "Ako ova uspee super ke bide $DEJAN"
       - run: echo "Secod run of the file with variable $DEJAN"
       - run: echo "Secod run of the file with variable $DEJAN"
