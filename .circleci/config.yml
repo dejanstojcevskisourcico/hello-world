@@ -9,6 +9,7 @@ jobs:
       - env/set-env-var:
           var-name: DEJAN
           var-value: $(cat temp.txt)
+      - run: rm temp.txt
       - env/persist-env
       - run: echo "Variable value of DEJAN is $DEJAN"
       - run: echo "Same variable in another step of thw same job $DEJAN"
