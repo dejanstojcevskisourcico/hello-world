@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  env: christeredvartsen/persist-env@<version>
+  env: christeredvartsen/persist-env@0.1.0
 jobs:
   build:
     machine: true
