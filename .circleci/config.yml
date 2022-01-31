@@ -13,7 +13,6 @@ jobs:
       - env/persist-env
       - run: echo "Variable value of DEJAN is $DEJAN"
       - run: echo "Same variable in another step of the same job $DEJAN"
-   
   deploy:
     machine: true
     steps:
