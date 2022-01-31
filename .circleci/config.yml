@@ -1,0 +1,13 @@
+version: 2.1
+orbs:
+  env: christeredvartsen/persist-env@<version>
+jobs:
+  build:
+    machine: true
+    steps:
+      - env/set-env-var:
+          var-name: DEJAN
+          var-value: deko
+      - run: echo "Do some stuff with $DEJAN..."
+      - env/persist-env
+      - run: echo "Ako ova uspee super ke bide $DEJAN"
