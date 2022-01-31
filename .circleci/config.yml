@@ -5,14 +5,9 @@ jobs:
   build:
     machine: true
     steps:
+      - run: echo 'deko' > temp.txt
       - env/set-env-var:
           var-name: DEJAN
-          var-value: deko
+          var-value: cat temp.txt
       - env/persist-env
-      - run: echo "Env variable from previous step is $DEJAN"
-      - run: DEJAN='second'
-      - env/set-env-var:
-          var-name: DEJAN
-          var-value: $DEJAN
-      - env/persist-env
-      - run: echo "Env variable from previous step is $DEJAN"
+      - run: echo 'Variable value of DEJAN is: ' $DEJAN
