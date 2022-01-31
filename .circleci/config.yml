@@ -13,5 +13,6 @@ jobs:
       - run: DEJAN='second'
       - env/set-env-var:
           var-name: DEJAN
+          var-value: $DEJAN
       - env/persist-env
       - run: echo "Env variable from previous step is $DEJAN"
