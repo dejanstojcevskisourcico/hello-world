@@ -10,6 +10,8 @@ jobs:
           var-value: deko
       - env/persist-env
       - run: echo "Do some stuff with $DEJAN..."
+      - run: DEJAN='second dejan'
+      - env/persist-env
       - run: echo "Ako ova uspee super ke bide $DEJAN"
       - run: echo "Secod run of the file with variable $DEJAN"
       - run: echo "Secod run of the file with variable $DEJAN"
