@@ -11,4 +11,4 @@ jobs:
           var-value: $(cat temp.txt)
       - env/persist-env
       - run: echo "Variable value of DEJAN is $DEJAN"
-      - run: echo "Same variable in another step of thw same job: $DEJAN"
+      - run: echo "Same variable in another step of thw same job $DEJAN"
