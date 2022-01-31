@@ -18,3 +18,9 @@ jobs:
     steps:
       - env/attach-env
       - run: echo "Variable in the other job $DEJAN"
+ workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy
